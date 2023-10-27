@@ -1,0 +1,6 @@
+# Dependencies
+discord.py 
+dotenv # pip install -U python-dotenv
+
+# Dev dependencies
+black
