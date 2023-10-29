@@ -42,13 +42,13 @@ An error happened in response to a command:
 
 ```
 Quotes:
-  !feed                                         Store the message to later use it in the out_of_context command: '!feed quote' or '!feed' as a reply to the quote
-  !menu                                         Gets all stored customed quotes
-  !out_of_context quote_number                  Responds with the quote corresponding to the number
+  !feed                                         Store the message to later use it for the serve command: '!feed quote' or '!feed' as a reply to the quote
+  !menu                                         Gets all stored custom quotes
+  !serve quote_number                           Responds with the custom quote corresponding to the number
   !priory                                       Responds with a random quote from the Priory of the Orange Tree
-  !random                                       Responds with a random quote
+  !random                                       Responds with a random quote from the custom quotes
 Utils:
-  !roll_dice number_of_dice number_of_sides     Simulates rolling dice
+  !roll number_of_dice number_of_sides          Simulates rolling dice
 ​No Category:
   !help                                         Shows this message
 

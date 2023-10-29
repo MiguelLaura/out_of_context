@@ -62,7 +62,7 @@ class Quotes(commands.Cog):
 
     @commands.command(
         name="feed",
-        help="Store the message to later use it in the out_of_context command: '!feed quote' or '!feed' as a reply to the quote",
+        help="Store the message to later use it for the serve command: '!feed quote' or '!feed' as a reply to the quote",
     )
     async def feed(self, ctx, arg=None):
         quote = ""
@@ -82,7 +82,7 @@ class Quotes(commands.Cog):
 
     @commands.command(
         name="menu",
-        help="Gets all stored customed quotes",
+        help="Gets all stored custom quotes",
     )
     async def menu(self, ctx):
         response = ""
@@ -94,10 +94,10 @@ class Quotes(commands.Cog):
         await ctx.send(response)
 
     @commands.command(
-        name="out_of_context",
-        help="Responds with the quote corresponding to the number: '!out_of_context quote_number'",
+        name="serve",
+        help="Responds with the custom quote corresponding to the number: '!serve quote_number'",
     )
-    async def out_of_context(self, ctx, arg: int):
+    async def serve(self, ctx, arg: int):
         quote = get_line("out_of_context.txt", arg)
         if quote is None:
             await ctx.send("No quote with this number")
@@ -119,8 +119,8 @@ class Utils(commands.Cog):
         self.bot = bot
 
     @commands.command(
-        name="roll_dice",
-        help="Simulates rolling dice : !roll_dice number_of_dice number_of_sides",
+        name="roll",
+        help="Simulates rolling dice : '!roll number_of_dice number_of_sides'",
     )
     async def roll(self, ctx, number_of_dice: int, number_of_sides: int):
         dice = [
