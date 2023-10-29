@@ -2,3 +2,5 @@ __pycache__
 .python-version
 .env
 out_of_context.txt
+credentials.json
+token.json

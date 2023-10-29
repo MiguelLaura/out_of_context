@@ -1,3 +1,13 @@
+import os.path
+
+from dotenv import load_dotenv
+
+
+load_dotenv()
+DOCUMENT_ID = os.getenv("GOOGLE_DOCUMENT_ID")
+
+FILENAME = "out_of_context.txt"
+
 BROOKLYN_99_QUOTES = [
     "I'm the human form of the 💯 emoji.",
     "Bingpot!",

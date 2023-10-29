@@ -1,6 +1,9 @@
 # Dependencies
 discord.py 
-dotenv # pip install -U python-dotenv
+python-dotenv
+google-api-python-client
+google-auth-httplib2
+google-auth-oauthlib
 
 # Dev dependencies
 black
